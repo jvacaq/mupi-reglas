@@ -1,2 +1,11 @@
 package mupi.com.mortgageproject.loan;
-
+rule "RGS001"
+           ruleflow-group "RGS1"
+             when
+               Person(hourlyRate * wage > 100)
+               Person(name : firstName, surname : lastName)
+             then
+               System.out.println("Hello" + " " + name + " " + surname
+           + "!");
+               System.out.println("You are rich!");
+end
