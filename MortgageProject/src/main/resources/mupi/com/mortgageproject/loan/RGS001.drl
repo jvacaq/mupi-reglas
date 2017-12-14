@@ -3,7 +3,7 @@ package mupi.com.mortgageproject.loan;
 rule "RGS001"
            //ruleflow-group "RGS1"
              when
-              (codigoProducto == 36001)
+              ("36001".equals(codigoProducto))
              then
                System.out.println("requiere gatantias" + " ");
 end
