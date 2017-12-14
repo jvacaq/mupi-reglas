@@ -6,5 +6,5 @@ rule "RGS001"
               //(codigoProducto2.equals(codigoProducto))
              
              then
-               System.out.println("requiere gatantias" + " " + codigoProducto);
+               System.out.println("requiere gatantias" + " " + resultado);
 end
