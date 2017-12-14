@@ -7,5 +7,5 @@ rule "RGS001"
               
              
              then
-               System.out.println("requiere gatantias" + " " + ${resultado});
+               System.out.println("requiere gatantias" + " " + resultado);
 end
