@@ -2,7 +2,7 @@ package mupi.com.mortgageproject.loan;
 rule "RGS001"
            ruleflow-group "RGS1"
              when
-               codigoProducto == 36001
+               codigoProducto = 36001
              then
                System.out.println("requiere gatantias --> NO");
 end
