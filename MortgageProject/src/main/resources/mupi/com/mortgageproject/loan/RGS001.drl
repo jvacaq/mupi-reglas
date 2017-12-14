@@ -7,5 +7,5 @@ rule "RGS001"
              //$resultado : (codigoProducto == "36001") 
              
              then
-               System.out.println("requiere gatantias" + " " + codigoProducto);
+               System.out.println("requiere gatantias" + " ");
 end
