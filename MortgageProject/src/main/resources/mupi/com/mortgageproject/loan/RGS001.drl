@@ -4,7 +4,8 @@ rule "RGS001"
            //ruleflow-group "RGS1"
              when
               //(codigoProducto2.equals(codigoProducto))
+              
              
              then
-               System.out.println("requiere gatantias" + " " + resultado);
+               System.out.println("requiere gatantias" + " " + $resultado);
 end
