@@ -1,5 +1,5 @@
 package mupi.com.mortgageproject.loan;
-codigoProducto = 36001;
+//codigoProducto = 36001;
 rule "RGS001"
            //ruleflow-group "RGS1"
              when
