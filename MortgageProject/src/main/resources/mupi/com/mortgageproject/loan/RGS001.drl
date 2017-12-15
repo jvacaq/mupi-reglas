@@ -16,7 +16,7 @@ rule "RGS001"
             $p : solicitud(codigoProducto == "36001")
              then
              System.out.println("requiere gatantias" + " " + $p.codigoProducto);
-             midify($p){
+             modify($p){
               setResultado("OK"); 
             }
              System.out.println("requiere gatantias" + " " + $p.resultado);
