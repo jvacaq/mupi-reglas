@@ -1,6 +1,6 @@
-import org.drools.runtime.process.WorkflowProcessInstance
+//import org.drools.runtime.process.WorkflowProcessInstance
 package mupi.com.mortgageproject.loan
-package mupi.com.mortgageproject.loan.solicitud
+//package mupi.com.mortgageproject.loan.solicitud
 
 
 rule "RGS001"
@@ -10,8 +10,8 @@ rule "RGS001"
              //(codigoProducto.equals("36001")
              //$resultado : "NO"
              //$codigoProducto : "123" 
-             $process:WorkflowProcessInstance()
-             eval(true);
+             //$process:WorkflowProcessInstance()
+             //eval(true);
              then
-             System.out.println("requiere gatantias");
+             System.out.println("requiere gatantias"+ " " + #{codigoProducto});
 end
