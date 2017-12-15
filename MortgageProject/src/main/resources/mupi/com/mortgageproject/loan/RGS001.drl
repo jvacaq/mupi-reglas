@@ -1,4 +1,5 @@
 package mupi.com.mortgageproject.loan;
+import org.drools.runtime.process.WorkflowProcessInstance;
 
 rule "RGS001"
             ruleflow-group "RGS1"
