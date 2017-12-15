@@ -9,25 +9,24 @@ public class solicitud implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "codigoProducto")
-   private mupi.com.mortgageproject.loan.solicitud codigoProducto;
+   @org.kie.api.definition.type.Label("codigoProducto")
+   private String codigoProducto;
 
    public solicitud()
    {
    }
 
-   public mupi.com.mortgageproject.loan.solicitud getCodigoProducto()
+   public java.lang.String getCodigoProducto()
    {
       return this.codigoProducto;
    }
 
-   public void setCodigoProducto(
-         mupi.com.mortgageproject.loan.solicitud codigoProducto)
+   public void setCodigoProducto(java.lang.String codigoProducto)
    {
       this.codigoProducto = codigoProducto;
    }
 
-   public solicitud(mupi.com.mortgageproject.loan.solicitud codigoProducto)
+   public solicitud(java.lang.String codigoProducto)
    {
       this.codigoProducto = codigoProducto;
    }
