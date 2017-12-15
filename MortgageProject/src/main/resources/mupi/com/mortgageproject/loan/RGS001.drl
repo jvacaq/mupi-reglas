@@ -9,5 +9,5 @@ rule "RGS001"
              //$codigoProducto : "123" 
              $process:WorkflowProcessInstance()
              then
-             System.out.println("requiere gatantias" + resultado);
+             System.out.println("requiere gatantias");
 end
