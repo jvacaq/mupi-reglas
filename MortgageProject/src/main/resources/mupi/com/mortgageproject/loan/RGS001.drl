@@ -1,10 +1,10 @@
 package mupi.com.mortgageproject.loan;
 
 rule "RGS001"
-           //ruleflow-group "RGS1"
+            ruleflow-group "RGS1"
              when
               //(codigoProducto2.equals(codigoProducto))
-             (codigoProducto.equals("36001"); 
+             (codigoProducto.equals("36001")
              //$resultado : "NO"
              //$codigoProducto : "123" 
              then
