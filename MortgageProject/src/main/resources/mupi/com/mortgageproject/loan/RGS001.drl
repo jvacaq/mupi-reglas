@@ -7,6 +7,7 @@ rule "RGS001"
              //(codigoProducto.equals("36001")
              //$resultado : "NO"
              //$codigoProducto : "123" 
+             $process:WorkflowProcessInstance()
              then
              System.out.println("requiere gatantias" + resultado);
 end
