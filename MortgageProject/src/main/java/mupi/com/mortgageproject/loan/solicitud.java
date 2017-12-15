@@ -12,6 +12,9 @@ public class solicitud implements java.io.Serializable
    @org.kie.api.definition.type.Label("codigoProducto")
    private String codigoProducto;
 
+   @org.kie.api.definition.type.Label(value = "resultado")
+   private java.lang.String resultado;
+
    public solicitud()
    {
    }
@@ -26,9 +29,20 @@ public class solicitud implements java.io.Serializable
       this.codigoProducto = codigoProducto;
    }
 
-   public solicitud(java.lang.String codigoProducto)
+   public java.lang.String getResultado()
+   {
+      return this.resultado;
+   }
+
+   public void setResultado(java.lang.String resultado)
+   {
+      this.resultado = resultado;
+   }
+
+   public solicitud(java.lang.String codigoProducto, java.lang.String resultado)
    {
       this.codigoProducto = codigoProducto;
+      this.resultado = resultado;
    }
 
 }
