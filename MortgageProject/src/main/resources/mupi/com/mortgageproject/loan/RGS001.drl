@@ -13,5 +13,5 @@ rule "RGS001"
              //$process:WorkflowProcessInstance()
              eval(true);
              then
-             System.out.println("requiere gatantias"+ " "+ codigoProducto);
+             System.out.println("requiere gatantias"+ " "+ solicitud.getcodigoProducto());
 end
