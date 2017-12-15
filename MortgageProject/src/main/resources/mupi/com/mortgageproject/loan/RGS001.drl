@@ -1,6 +1,6 @@
 //import org.drools.runtime.process.WorkflowProcessInstance
 package mupi.com.mortgageproject.loan
-import mupi.com.mortgageproject.loan.solicitud
+import mupi.com.mortgageproject.loan.solicitud;
 
 
 rule "RGS001"
@@ -15,9 +15,9 @@ rule "RGS001"
              //eval(true)
             $p : solicitud(codigoProducto == "36001")
              then
-             System.out.println("requiere gatantias" + " " + $p.codigoProducto);
+             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto());
              modify($p){
               setResultado("OK"); 
             }
-             System.out.println("requiere gatantias" + " " + $p.resultado);
+             System.out.println("requiere gatantias" + " " + $p.getResultado());
 end
