@@ -13,7 +13,7 @@ rule "RGS001"
              //$process:WorkflowProcessInstance()
              //$p : codigoProducto == "36001" 
              //eval(true)
-            $p : solicitud(codigoProducto == "36001")
+            $p : solicitud(codigoProducto == null)
              then
              System.out.println("requiere gatantias" + " " + $p.getCodigoProducto());
              modify($p){
