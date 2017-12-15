@@ -15,5 +15,6 @@ rule "RGS001"
              eval(true)
             
              then
-             System.out.println("requiere gatantias" + " " + codigoProducto);
+             resultado = "hola";
+             System.out.println("requiere gatantias" + " " +);
 end
