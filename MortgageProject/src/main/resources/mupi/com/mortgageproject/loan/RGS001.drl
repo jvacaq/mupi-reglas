@@ -12,9 +12,8 @@ rule "RGS001"
              //$codigoProducto : "123" 
              //$process:WorkflowProcessInstance()
              //$p : codigoProducto == "36001" 
-             eval(resultado = "hola")
+             eval(true)
             
              then
-             //resultado = "hola";
-             System.out.println("requiere gatantias" + " " + resultado);
+             System.out.println("requiere gatantias");
 end
