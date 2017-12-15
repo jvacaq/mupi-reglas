@@ -16,5 +16,5 @@ rule "RGS001"
             
              then
              resultado = "hola";
-             System.out.println("requiere gatantias" + " " +);
+             System.out.println("requiere gatantias" + " ");
 end
