@@ -48,8 +48,7 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_AD6FD258-73C7-402A-8E69-303CCB610278</bpmn2:incoming>
       <bpmn2:outgoing>_6BADCBA2-2434-41FF-A110-F3DD64ED7E1C</bpmn2:outgoing>
-      <bpmn2:script><![CDATA[
-System.out.println("El codigo del producto es");]]></bpmn2:script>
+      
     </bpmn2:scriptTask>
     <bpmn2:sequenceFlow id="_AD6FD258-73C7-402A-8E69-303CCB610278" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_1E4D855A-CAA2-4533-9FA2-5708953194FF" targetRef="_8AB36558-C8BD-49B1-AE5D-F9EE06E5BFCB"/>
     <bpmn2:sequenceFlow id="_6BADCBA2-2434-41FF-A110-F3DD64ED7E1C" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_8AB36558-C8BD-49B1-AE5D-F9EE06E5BFCB" targetRef="_8CA2151B-E6B4-4638-945D-791F1260A7B7"/>
