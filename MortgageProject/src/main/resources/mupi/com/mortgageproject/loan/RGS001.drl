@@ -11,7 +11,7 @@ rule "RGS001"
              //$resultado : "NO"
              //$codigoProducto : "123" 
              //$process:WorkflowProcessInstance()
-             $p : _solicitud(codigoProducto == "36001") 
+             $p : codigoProducto == "36001" 
              //eval(true)
             
              then
