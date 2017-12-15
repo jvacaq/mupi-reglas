@@ -12,6 +12,7 @@ rule "RGS001"
              //$codigoProducto : "123" 
              //$process:WorkflowProcessInstance()
              eval(true);
-             then
              System.out.println("requiere gatantias"+ " "+ _codigoProducto);
+             then
+             System.out.println("requiere gatantias"+ " ");
 end
