@@ -11,8 +11,9 @@ rule "RGS001"
              //$resultado : "NO"
              //$codigoProducto : "123" 
              //$process:WorkflowProcessInstance()
-             eval(true)
-             System.out.println("requiere gatantias"+ " "+ _codigoProducto);
+             $p : _solicitud(codigoProducto == "36001") 
+             //eval(true)
+            
              then
-             System.out.println("requiere gatantias"+ " ");
+             System.out.println("requiere gatantias" + " " + $p);
 end
