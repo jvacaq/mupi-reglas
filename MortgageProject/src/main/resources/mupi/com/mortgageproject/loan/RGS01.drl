@@ -1,18 +1,18 @@
 package mupi.com.mortgageproject.loan;
 
-rule "RGS1-1"
+rule "RGS001-1"
             no-loop true
-            ruleflow-group "REGLA"
+            ruleflow-group "RGS1"
             
              when
-            eval(true)
-            //$p : Solicitud(codigoProducto == 36001)
+           
+            $p : Solicitud(codigoProducto == 36001)
             
              then
-            //System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
-            //modify($p){
-              //setRequiereGarantias("NO"),
-              //setRequiereGarantes("NO")
-            //}
-            System.out.println("requiere gatantias");
+            System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
+            modify($p){
+              setRequiereGarantias("NO"),
+              setRequiereGarantes("NO")
+            }
+            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
 end
