@@ -6,7 +6,7 @@ rule "RGS001-1"
             
              when
            
-            $p : Solicitud(codigoProducto == 36001)
+            $p : Solicitud((codigoProducto == 36001 || (tipoGarantia == "SIN GARANTIA" && tipoPersona == "JURIDICA")))
             
              then
             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
@@ -34,7 +34,7 @@ rule "RGS001-2"
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
 end
 
-rule "RGS001-3"
+/*rule "RGS001-3"
             no-loop true
             ruleflow-group "RGS1"
             
@@ -49,7 +49,7 @@ rule "RGS001-3"
               setRequiereGarantes("NO")
             }
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
-end
+end*/
 
 rule "RGS001-4"
             no-loop true
