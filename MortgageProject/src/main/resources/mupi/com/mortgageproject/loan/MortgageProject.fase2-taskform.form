@@ -3,39 +3,18 @@
 <property name="name" value="MortgageProject.fase2-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="5" name="solicitud_tipoCliente" type="InputText" id="1019046877">
+<field position="0" name="solicitud_codigoProducto" type="InputTextInteger" id="399649036">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;tipoCliente (solicitud)quot;"/>
+<property name="label" value="quot;enquot;,quot;codigoProducto (solicitud)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/tipoCliente"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="3" name="solicitud_requiereGarantes" type="InputText" id="137220639">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;requiereGarantes (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/requiereGarantes"/>
-<property name="fieldClass" value="java.lang.String"/>
+<property name="outputBinding" value="solicitud/codigoProducto"/>
+<property name="fieldClass" value="java.lang.Integer"/>
 </field>
 <field position="1" name="solicitud_grupoTipoCredito" type="InputText" id="78535545">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;grupoTipoCredito (solicitud)quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="solicitud/grupoTipoCredito"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="6" name="solicitud_tipoGarantia" type="InputText" id="1391119949">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;tipoGarantia (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/tipoGarantia"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="7" name="solicitud_tipoPersona" type="InputText" id="163423559">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;tipoPersona (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/tipoPersona"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="2" name="solicitud_montoSolicitado" type="InputTextDouble" id="1406571805">
@@ -45,19 +24,19 @@
 <property name="outputBinding" value="solicitud/montoSolicitado"/>
 <property name="fieldClass" value="java.lang.Double"/>
 </field>
-<field position="4" name="solicitud_requiereGarantias" type="InputText" id="126090632">
+<field position="3" name="solicitud_tipoCliente" type="InputText" id="1019046877">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;requiereGarantias (solicitud)quot;"/>
+<property name="label" value="quot;enquot;,quot;tipoCliente (solicitud)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/requiereGarantias"/>
+<property name="outputBinding" value="solicitud/tipoCliente"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="0" name="solicitud_codigoProducto" type="InputTextInteger" id="399649036">
+<field position="4" name="solicitud_tipoGarantia" type="InputText" id="1391119949">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;codigoProducto (solicitud)quot;"/>
+<property name="label" value="quot;enquot;,quot;tipoGarantia (solicitud)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/codigoProducto"/>
-<property name="fieldClass" value="java.lang.Integer"/>
+<property name="outputBinding" value="solicitud/tipoGarantia"/>
+<property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="solicitud" value="mupi.com.mortgageproject.loan.Solicitud" id="solicitud"/>
 </form>
