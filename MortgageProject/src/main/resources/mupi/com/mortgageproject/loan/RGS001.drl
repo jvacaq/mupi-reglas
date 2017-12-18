@@ -24,7 +24,7 @@ rule "RGS001-1"
               setRequiereGarantias("NO"),
               setRequiereGarantes("NO")
             }
-            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + "" + $p.getRequiereGarantes());
+            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + " " + $p.getRequiereGarantes());
 end
 
 rule "RGS001-2"
@@ -36,11 +36,11 @@ rule "RGS001-2"
             $p : solicitud(grupoTipoCredito == "CONSUMO" && tipoGarantia == "QUIROGRAFARIO")
             
              then
-            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + "" + $p.getRequiereGarantes());
+            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + " " + $p.getRequiereGarantes());
             modify($p){
               setRequiereGarantias("NO"),
               setRequiereGarantes("SI")
             }
-            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + "" + $p.getRequiereGarantes());
+            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + " " + $p.getRequiereGarantes());
 end
 
