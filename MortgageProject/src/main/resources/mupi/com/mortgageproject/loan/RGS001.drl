@@ -39,7 +39,7 @@ rule "RGS001-2"
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + "" + $p.getRequiereGarantes());
             modify($p){
               setRequiereGarantia("NO")
-              setRequiereGarantes("SI");
+              //setRequiereGarantes("SI");
             }
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + "" + $p.getRequiereGarantes());
 end
