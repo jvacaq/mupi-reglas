@@ -15,7 +15,7 @@ rule "RGS001"
              //$p : codigoProducto == "36001" 
             // eval(true)
            
-            $p : solicitud(codigoProducto == "aa")
+            $p : _solicitud(codigoProducto == "aa")
             
              then
              System.out.println("requiere gatantias" + " " + $p.getCodigoProducto());
