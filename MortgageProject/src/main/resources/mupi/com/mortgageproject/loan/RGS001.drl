@@ -5,6 +5,7 @@ import mupi.com.mortgageproject.loan.solicitud;
 
 rule "RGS001"
             ruleflow-group "RGS1"
+            System.out.println("requiere gatantias1")
              when
               //(codigoProducto2.equals(codigoProducto))
              //(codigoProducto.equals("36001")
@@ -13,6 +14,7 @@ rule "RGS001"
              //$process:WorkflowProcessInstance()
              //$p : codigoProducto == "36001" 
             // eval(true)
+            System.out.println("requiere gatantias2")
             $p : solicitud(codigoProducto == "aa")
             
              then
