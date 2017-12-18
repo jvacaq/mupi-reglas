@@ -1,2 +1,18 @@
 package mupi.com.mortgageproject.loan;
 
+rule "RGS002-1"
+            no-loop true
+            ruleflow-group "RGS2"
+            
+             when
+           
+            $p : Solicitud((codigoProducto == 36001 || (tipoGarantia == "SIN GARANTIA" && tipoPersona == "JURIDICA")))
+            
+             then
+            System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
+            modify($p){
+              setRequiereGarantias("NO"),
+              setRequiereGarantes("NO")
+            }
+            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
+end
