@@ -5,8 +5,8 @@ rule "RGS1-1"
             ruleflow-group "RGS1"
             
              when
-           
-            $p : Solicitud(codigoProducto == 36001)
+            eval(true)
+            //$p : Solicitud(codigoProducto == 36001)
             
              then
             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
