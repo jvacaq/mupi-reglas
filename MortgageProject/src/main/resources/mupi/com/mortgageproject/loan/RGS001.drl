@@ -61,7 +61,7 @@ rule "RGS001-4"
              when
             // 
             //montoSolicitado == null, tipoPersona == null
-            $p : solicitud(codigoProducto == null, grupoTipoCredito == "", tipoGarantia == "", tipoCliente == "", montoSolicitado == null, tipoPersona == "")
+            $p : solicitud(codigoProducto == null, (grupoTipoCredito == "" ||grupoTipoCredito == null) , tipoGarantia == "", tipoCliente == "", montoSolicitado == null, tipoPersona == "")
             
              then
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + " " + $p.getRequiereGarantes());
