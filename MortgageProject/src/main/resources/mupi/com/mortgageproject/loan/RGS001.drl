@@ -4,6 +4,7 @@ import mupi.com.mortgageproject.loan.solicitud;
 
 
 rule "RGS001"
+            no-loop true
             ruleflow-group "RGS1"
             
              when
