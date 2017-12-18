@@ -5,7 +5,7 @@ import mupi.com.mortgageproject.loan.solicitud;
 
 rule "RGS001"
             ruleflow-group "RGS1"
-            System.out.println("requiere gatantias1")
+            System.out.println("requiere gatantias1");
              when
               //(codigoProducto2.equals(codigoProducto))
              //(codigoProducto.equals("36001")
