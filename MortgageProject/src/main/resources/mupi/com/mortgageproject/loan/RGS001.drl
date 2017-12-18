@@ -8,13 +8,6 @@ rule "RGS001-1"
             ruleflow-group "RGS1"
             
              when
-              //(codigoProducto2.equals(codigoProducto))
-             //(codigoProducto.equals("36001")
-             //$resultado : "NO"
-             //$codigoProducto : "123" 
-             //$process:WorkflowProcessInstance()
-             //$p : codigoProducto == "36001" 
-            // eval(true)
            
             $p : solicitud(codigoProducto == 36001)
             
