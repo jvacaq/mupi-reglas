@@ -61,3 +61,21 @@ rule "RGS001-3"
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
 end
 
+rule "RGS001-4"
+            no-loop true
+            ruleflow-group "RGS1"
+            
+             when
+            
+            $p : solicitud(codigoProducto == null && grupoTipoCredito == null && tipoGarantia == null && tipoCliente == null & 
+            montoSolicitado == null && tipoPersona == null)
+            
+             then
+            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + " " + $p.getRequiereGarantes());
+            modify($p){
+              setRequiereGarantias("SI"),
+              setRequiereGarantes("NO")
+            }
+            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
+end
+
