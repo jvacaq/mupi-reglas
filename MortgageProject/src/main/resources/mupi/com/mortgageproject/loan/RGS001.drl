@@ -15,16 +15,18 @@ rule "RGS001"
              //$p : codigoProducto == "36001" 
             // eval(true)
            
-            $p : solicitud(codigoProducto == "123")
-            
+            //$p : solicitud(codigoProducto == "123")
+            codigo2 == "123"
              then
-             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto());
-             modify($p){
+             /*System.out.println("requiere gatantias" + " " + $p.getCodigoProducto());
+            // modify($p){
               setResultado("OK"); 
-            }
-             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto());
-             modify($p){
-              setCodigoProducto("OK"); 
-            }
+            }*/
+            codigo3 = "321"
+            System.out.println("resultado codigo3");
+            // System.out.println("requiere gatantias" + " " + $p.getCodigoProducto());
+             //modify($p){
+              //setCodigoProducto("OK"); 
+            //}
              //System.out.println("requiere gatantias" + " " + codigo);
 end
