@@ -21,7 +21,7 @@ rule "RGS001-1"
              then
             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() +  " " + $p.getResultado());
             modify($p){
-              setRequiereGarantias("NO")
+              setRequiereGarantias("NO");
               setRequiereGarantes("SI");
             }
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + "" + $p.getRequiereGarantes());
@@ -38,8 +38,8 @@ rule "RGS001-2"
              then
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + "" + $p.getRequiereGarantes());
             modify($p){
-              setRequiereGarantia("NO")
-              //setRequiereGarantes("SI");
+              setRequiereGarantias("NO");
+              setRequiereGarantes("SI");
             }
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + "" + $p.getRequiereGarantes());
 end
