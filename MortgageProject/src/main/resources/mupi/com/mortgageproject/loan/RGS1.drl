@@ -1,7 +1,7 @@
 //package mupi.com.mortgageproject.loan;
 //import org.drools.runtime.process.WorkflowProcessInstance
 package mupi.com.mortgageproject.loan
-import mupi.com.mortgageproject.loan.Solicitud
+import mupi.com.mortgageproject.loan.Solicitud;
 
 
 rule "RGS001-1"
