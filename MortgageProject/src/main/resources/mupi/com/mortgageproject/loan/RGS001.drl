@@ -21,10 +21,10 @@ rule "RGS001-1"
              then
             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() +  " " + $p.getResultado());
             modify($p){
-              setResultado("OK"); 
+              setRequiereGarantia("NO");
+              setRequiereGarantes("SI");
             }
-            System.out.println("resultado codigo3"+ " " + $p.getResultado());
-            
+            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + "" + $p.getRequiereGarantes());
 end
 
 rule "RGS001-2"
@@ -38,38 +38,9 @@ rule "RGS001-2"
              then
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + "" + $p.getRequiereGarantes());
             modify($p){
-              setResultado("OK"); 
+              setRequiereGarantia("NO");
+              setRequiereGarantes("SI");
             }
-            System.out.println("resultado codigo3"+ " " + $p.getResultado());
+            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + "" + $p.getRequiereGarantes());
 end
 
-rule "RGS001-3"
-            no-loop true
-            ruleflow-group "RGS1"
-            
-             when
-            
-            $p : solicitud(codigoProducto == "123")
-            
-             then
-            System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() +  " " + $p.getResultado());
-            modify($p){
-              setResultado("OK"); 
-            }
-            System.out.println("resultado codigo3"+ " " + $p.getResultado());
-end
-
-rule "RGS001-4"
-            no-loop true
-            ruleflow-group "RGS1"
-            
-             when
-              $p : solicitud(codigoProducto == "123")
-            
-             then
-                System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() +  " " + $p.getResultado());
-                    modify($p){
-                        setResultado("OK"); 
-                    }
-            System.out.println("resultado codigo3"+ " " + $p.getResultado());
-end
