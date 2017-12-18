@@ -1,6 +1,6 @@
 //import org.drools.runtime.process.WorkflowProcessInstance
 package mupi.com.mortgageproject.loan
-import mupi.com.mortgageproject.loan.solicitud;
+import mupi.com.mortgageproject.loan.Solicitud;
 
 
 rule "RGS001-1"
@@ -9,7 +9,7 @@ rule "RGS001-1"
             
              when
            
-            $p : solicitud(codigoProducto == 36001)
+            $p : Solicitud(codigoProducto == 36001)
             
              then
             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
@@ -26,7 +26,7 @@ rule "RGS001-2"
             
              when
             
-            $p : solicitud(grupoTipoCredito == "CONSUMO" && tipoGarantia == "QUIROGRAFARIO")
+            $p : Solicitud(grupoTipoCredito == "CONSUMO" && tipoGarantia == "QUIROGRAFARIO")
             
              then
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + " " + $p.getRequiereGarantes());
@@ -43,7 +43,7 @@ rule "RGS001-3"
             
              when
             
-            $p : solicitud(tipoGarantia == "SIN GARANTIA" && tipoPersona == "JURIDICA")
+            $p : Solicitud(tipoGarantia == "SIN GARANTIA" && tipoPersona == "JURIDICA")
             
              then
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + " " + $p.getRequiereGarantes());
@@ -61,7 +61,7 @@ rule "RGS001-4"
              when
             // 
             //montoSolicitado == null, tipoPersona == null
-            $p : solicitud(codigoProducto == null, (grupoTipoCredito == "" ||grupoTipoCredito == null) , tipoGarantia == "", tipoCliente == "", montoSolicitado == null, tipoPersona == "")
+            $p : Solicitud(codigoProducto == null, (grupoTipoCredito == "" ||grupoTipoCredito == null) , tipoGarantia == "", tipoCliente == "", montoSolicitado == null, tipoPersona == "")
             
              then
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + " " + $p.getRequiereGarantes());
