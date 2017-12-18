@@ -22,7 +22,7 @@ rule "RGS001"
             // modify($p){
               setResultado("OK"); 
             }*/
-            codigo3 = "321"
+            codigo2 = "321";
             System.out.println("resultado codigo3");
             // System.out.println("requiere gatantias" + " " + $p.getCodigoProducto());
              //modify($p){
