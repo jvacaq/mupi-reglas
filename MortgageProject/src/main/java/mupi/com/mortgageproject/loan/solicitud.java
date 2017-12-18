@@ -12,9 +12,6 @@ public class solicitud implements java.io.Serializable
    @org.kie.api.definition.type.Label("codigoProducto")
    private String codigoProducto;
 
-   @org.kie.api.definition.type.Label("resultado")
-   private java.lang.String resultado;
-
    private java.lang.String grupoTipoCredito;
 
    private java.lang.String tipoGarantia;
@@ -41,16 +38,6 @@ public class solicitud implements java.io.Serializable
    public void setCodigoProducto(java.lang.String codigoProducto)
    {
       this.codigoProducto = codigoProducto;
-   }
-
-   public java.lang.String getResultado()
-   {
-      return this.resultado;
-   }
-
-   public void setResultado(java.lang.String resultado)
-   {
-      this.resultado = resultado;
    }
 
    public java.lang.String getGrupoTipoCredito()
@@ -123,14 +110,13 @@ public class solicitud implements java.io.Serializable
       this.requiereGarantes = requiereGarantes;
    }
 
-   public solicitud(java.lang.String codigoProducto, java.lang.String resultado,
+   public solicitud(java.lang.String codigoProducto,
          java.lang.String grupoTipoCredito, java.lang.String tipoGarantia,
          java.lang.String tipoCliente, java.lang.Double montoSolicitado,
          java.lang.String tipoPersona, java.lang.String requiereGarantias,
          java.lang.String requiereGarantes)
    {
       this.codigoProducto = codigoProducto;
-      this.resultado = resultado;
       this.grupoTipoCredito = grupoTipoCredito;
       this.tipoGarantia = tipoGarantia;
       this.tipoCliente = tipoCliente;
