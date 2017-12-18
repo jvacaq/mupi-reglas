@@ -24,7 +24,7 @@ rule "RGS001-1"
               setRequiereGarantias("NO"),
               setRequiereGarantes("NO")
             }
-            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + " " + $p.getRequiereGarantes());
+            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
 end
 
 rule "RGS001-2"
@@ -41,6 +41,23 @@ rule "RGS001-2"
               setRequiereGarantias("NO"),
               setRequiereGarantes("SI")
             }
+            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
+end
+
+rule "RGS001-3"
+            no-loop true
+            ruleflow-group "RGS1"
+            
+             when
+            
+            $p : solicitud(tipoGarantia == "SIN GARANTIA" && tipoPersona == "JURIDICA")
+            
+             then
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + " " + $p.getRequiereGarantes());
+            modify($p){
+              setRequiereGarantias("NO"),
+              setRequiereGarantes("NO")
+            }
+            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
 end
 
