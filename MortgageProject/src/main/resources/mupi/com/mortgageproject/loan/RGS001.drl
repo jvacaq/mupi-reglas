@@ -66,9 +66,9 @@ rule "RGS001-4"
             ruleflow-group "RGS1"
             
              when
-            //grupoTipoCredito == null, tipoGarantia == null, tipoCliente == null, 
+            // 
             //montoSolicitado == null, tipoPersona == null
-            $p : solicitud(codigoProducto == null)
+            $p : solicitud(codigoProducto == null, grupoTipoCredito == null, tipoGarantia == null, tipoCliente == null, montoSolicitado == null, tipoPersona == null)
             
              then
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + " " + $p.getRequiereGarantes());
