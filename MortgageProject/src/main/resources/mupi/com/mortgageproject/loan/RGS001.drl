@@ -12,14 +12,14 @@ rule "RGS001"
              //$codigoProducto : "123" 
              //$process:WorkflowProcessInstance()
              //$p : codigoProducto == "36001" 
-             eval(true)
-            //$p : solicitud(codigoProducto == "aa")
+            // eval(true)
+            $p : solicitud(codigoProducto == "aa")
             
              then
-             /*System.out.println("requiere gatantias" + " " + $p.getCodigoProducto());
+             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto());
              modify($p){
               setResultado("OK"); 
-            }*/
-             //System.out.println("requiere gatantias" + " " + $p.getResultado());
-             System.out.println("requiere gatantias" + " " + codigo);
+            }
+             System.out.println("requiere gatantias" + " " + $p.getResultado());
+             //System.out.println("requiere gatantias" + " " + codigo);
 end
