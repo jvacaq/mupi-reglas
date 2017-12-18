@@ -3,51 +3,49 @@
 <property name="name" value="MortgageProject.fase2-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="0" name="solicitud_codigoProducto" type="InputText" id="336808598">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;codigoProducto (solicitud)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="false"/>
-<property name="isHTML" value="false"/>
-<property name="hideContent" value="false"/>
-<property name="outputBinding" value="solicitud/codigoProducto"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="1" name="solicitud_grupoTipoCredito" type="InputText" id="254255350">
+<field position="0" name="solicitud_grupoTipoCredito" type="InputText" id="254255350">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;grupoTipoCredito (solicitud)quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="solicitud/grupoTipoCredito"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="2" name="solicitud_tipoGarantia" type="InputText" id="1018359315">
+<field position="1" name="solicitud_tipoGarantia" type="InputText" id="1018359315">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;tipoGarantia (solicitud)quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="solicitud/tipoGarantia"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="3" name="solicitud_tipoCliente" type="InputText" id="1574181867">
+<field position="2" name="solicitud_tipoCliente" type="InputText" id="1574181867">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;tipoCliente (solicitud)quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="solicitud/tipoCliente"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="4" name="solicitud_montoSolicitado" type="InputTextDouble" id="224658679">
+<field position="3" name="solicitud_montoSolicitado" type="InputTextDouble" id="224658679">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;montoSolicitado (solicitud)quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="solicitud/montoSolicitado"/>
 <property name="fieldClass" value="java.lang.Double"/>
 </field>
-<field position="5" name="solicitud_tipoPersona" type="InputText" id="854331411">
+<field position="4" name="solicitud_tipoPersona" type="InputText" id="854331411">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;tipoPersona (solicitud)quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="solicitud/tipoPersona"/>
 <property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="solicitud_codigoProducto" type="InputTextInteger" id="182587175">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;codigoProducto (solicitud)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="solicitud/codigoProducto"/>
+<property name="fieldClass" value="java.lang.Integer"/>
 </field>
 <dataHolder inputId="" name="#E9E371" type="basicType" outId="codigo" value="java.lang.String" id="codigo"/>
 <dataHolder inputId="" name="#FF54A7" type="dataModelerEntry" outId="solicitud" value="mupi.com.mortgageproject.loan.solicitud" id="solicitud"/>
