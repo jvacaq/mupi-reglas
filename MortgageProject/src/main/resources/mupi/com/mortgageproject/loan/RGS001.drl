@@ -22,6 +22,6 @@ rule "RGS001"
              modify($p){
               setResultado("OK"); 
             }
-             System.out.println("requiere gatantias" + " " + $p.getResultado());
+             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto());
              //System.out.println("requiere gatantias" + " " + codigo);
 end
