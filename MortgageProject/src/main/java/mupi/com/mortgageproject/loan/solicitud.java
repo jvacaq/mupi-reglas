@@ -10,7 +10,7 @@ public class solicitud implements java.io.Serializable
    static final long serialVersionUID = 1L;
 
    @org.kie.api.definition.type.Label("codigoProducto")
-   private String codigoProducto;
+   private Integer codigoProducto;
 
    private java.lang.String grupoTipoCredito;
 
@@ -28,16 +28,6 @@ public class solicitud implements java.io.Serializable
 
    public solicitud()
    {
-   }
-
-   public java.lang.String getCodigoProducto()
-   {
-      return this.codigoProducto;
-   }
-
-   public void setCodigoProducto(java.lang.String codigoProducto)
-   {
-      this.codigoProducto = codigoProducto;
    }
 
    public java.lang.String getGrupoTipoCredito()
@@ -110,7 +100,17 @@ public class solicitud implements java.io.Serializable
       this.requiereGarantes = requiereGarantes;
    }
 
-   public solicitud(java.lang.String codigoProducto,
+   public java.lang.Integer getCodigoProducto()
+   {
+      return this.codigoProducto;
+   }
+
+   public void setCodigoProducto(java.lang.Integer codigoProducto)
+   {
+      this.codigoProducto = codigoProducto;
+   }
+
+   public solicitud(java.lang.Integer codigoProducto,
          java.lang.String grupoTipoCredito, java.lang.String tipoGarantia,
          java.lang.String tipoCliente, java.lang.Double montoSolicitado,
          java.lang.String tipoPersona, java.lang.String requiereGarantias,
