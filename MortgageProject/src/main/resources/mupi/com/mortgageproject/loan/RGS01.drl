@@ -2,7 +2,7 @@ package mupi.com.mortgageproject.loan;
 
 rule "RGS1-1"
             no-loop true
-            ruleflow-group "RGS1"
+            ruleflow-group "REGLA"
             
              when
             eval(true)
