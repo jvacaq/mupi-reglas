@@ -22,7 +22,7 @@ rule "RGS001-1"
             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() +  " " + $p.getResultado());
             modify($p){
               setRequiereGarantias("NO");
-              setRequiereGarantes("SI");
+              //setRequiereGarantes("SI");
             }
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + "" + $p.getRequiereGarantes());
 end
