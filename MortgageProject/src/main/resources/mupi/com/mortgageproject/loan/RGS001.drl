@@ -23,5 +23,8 @@ rule "RGS001"
               setResultado("OK"); 
             }
              System.out.println("requiere gatantias" + " " + $p.getCodigoProducto());
+             modify($p){
+              setCodigoProducto("OK"); 
+            }
              //System.out.println("requiere gatantias" + " " + codigo);
 end
