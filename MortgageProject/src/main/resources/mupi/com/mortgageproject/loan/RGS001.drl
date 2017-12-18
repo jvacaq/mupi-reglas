@@ -67,7 +67,7 @@ rule "RGS001-4"
             
              when
             
-            $p : solicitud(codigoProducto == null && grupoTipoCredito == null && tipoGarantia == null && tipoCliente == null & 
+            $p : solicitud(codigoProducto == null && grupoTipoCredito == null && tipoGarantia == null && tipoCliente == null && 
             montoSolicitado == null && tipoPersona == null)
             
              then
