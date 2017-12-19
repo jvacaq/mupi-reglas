@@ -94,7 +94,7 @@ rule "RGS002-2/3" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
             
              when
            
-            $p : Solicitud((estadoScoreSolicitado == "APROBADO" || estadoScoreSolicitado =="ANALISIS"))
+            $p : Solicitud(estadoScoreSolicitado == "APROBADO")
             
              then
             modify($p){
@@ -103,6 +103,20 @@ rule "RGS002-2/3" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
             System.out.println("resultado score" + " " + $p.getResultadoScore());
 end
 
+rule "RGS002-3" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
+            lock-on-active true
+            ruleflow-group "RGS1"
+            
+             when
+           
+            $p : Solicitud(estadoScoreSolicitado =="ANALISIS")
+            
+             then
+            modify($p){
+                setResultadoScore("ANALISIS")
+            }
+            System.out.println("resultado score" + " " + $p.getResultadoScore());
+end
 rule "RGS002-4" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
             lock-on-active true
             ruleflow-group "RGS1"
