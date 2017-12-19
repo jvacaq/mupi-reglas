@@ -97,7 +97,6 @@ rule "RGS002-2/3" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
             $p : Solicitud((estadoScoreSolicitado == "APROBADO" || estadoScoreSolicitado =="ANALISIS"))
             
              then
-            System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
             modify($p){
                 setResultadoScore("ANALISIS")
             }
@@ -110,10 +109,9 @@ rule "RGS002-4" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
             
              when
            
-            $p : Solicitud((estadoScoreSolicitado == "NEGADO")
+            $p : Solicitud(estadoScoreSolicitado == "NEGADO")
             
              then
-            System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
             modify($p){
                 setResultadoScore("NEGADO")
             }
