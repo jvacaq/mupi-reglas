@@ -26,6 +26,8 @@ public class Solicitud implements java.io.Serializable
 
    private java.lang.String requiereGarantes;
 
+   private java.lang.String estadoScoreSolicitado;
+
    public Solicitud()
    {
    }
@@ -110,11 +112,22 @@ public class Solicitud implements java.io.Serializable
       this.codigoProducto = codigoProducto;
    }
 
+   public java.lang.String getEstadoScoreSolicitado()
+   {
+      return this.estadoScoreSolicitado;
+   }
+
+   public void setEstadoScoreSolicitado(java.lang.String estadoScoreSolicitado)
+   {
+      this.estadoScoreSolicitado = estadoScoreSolicitado;
+   }
+
    public Solicitud(java.lang.Integer codigoProducto,
          java.lang.String grupoTipoCredito, java.lang.String tipoGarantia,
          java.lang.String tipoCliente, java.lang.Double montoSolicitado,
          java.lang.String tipoPersona, java.lang.String requiereGarantias,
-         java.lang.String requiereGarantes)
+         java.lang.String requiereGarantes,
+         java.lang.String estadoScoreSolicitado)
    {
       this.codigoProducto = codigoProducto;
       this.grupoTipoCredito = grupoTipoCredito;
@@ -124,6 +137,7 @@ public class Solicitud implements java.io.Serializable
       this.tipoPersona = tipoPersona;
       this.requiereGarantias = requiereGarantias;
       this.requiereGarantes = requiereGarantes;
+      this.estadoScoreSolicitado = estadoScoreSolicitado;
    }
 
 }
