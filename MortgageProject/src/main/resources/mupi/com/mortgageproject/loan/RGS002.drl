@@ -6,7 +6,8 @@ rule "RGS002-1"
             
              when
            
-            $p : Solicitud((codigoProducto == 36001 || (tipoGarantia == "SIN GARANTIA" && tipoPersona == "JURIDICA")))
+            $p : Solicitud(grupoTipoCredito == "CONSUMO", tipoGarantia == "HIPOTECARIO",
+            montoSolicitado <= 15000, estadoScoreSolicitado == "APROBADO")
             
              then
             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
