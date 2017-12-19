@@ -211,3 +211,21 @@ rule "RGS004-1" //REGLAS PARA SETERAR EL NIVEL Y ORDEN  DE LA SOLICITUD
             System.out.println("resultado nivelActual" + " " + $p.getNivelActual() + " " + "resultado ordenComite" + " " + $p.getOrdenComite());
 end
 
+rule "RGS004-2" //REGLAS PARA SETERAR EL NIVEL Y ORDEN  DE LA SOLICITUD
+            lock-on-active true
+            ruleflow-group "RGS1"
+            
+             when
+           
+            $p : Solicitud((codigoOficialCuenta == null, codigoProducto == null,  
+            (nombreProducto == null ||nombreProducto == ""), (grupoTipoCredito == null ||grupoTipoCredito == ""), 
+            (tipoGarantia == null ||tipoGarantia == ""),(tipoCliente == null ||tipoCliente == ""), 
+            (tipoPersona == null ||tipoPersona == ""), montoSolicitado == null)
+        
+             then
+            modify($p){
+                setNivelActual(1),
+                setOrdenComite(0)
+            }
+            System.out.println("resultado nivelActual" + " " + $p.getNivelActual() + " " + "resultado ordenComite" + " " + $p.getOrdenComite());
+end
