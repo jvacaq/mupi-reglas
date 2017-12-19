@@ -1,4 +1,4 @@
-package com.mupi.credito.reglas.Solicitud;
+package com.mupi.credito.reglas;
 
 rule "RGS001-1/3" //REGLAS PARA DEFINIR CUANDO LA SOLICITUD REQUIERE GARANTES / GARANTIAS
             lock-on-active true
