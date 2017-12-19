@@ -30,6 +30,8 @@ public class Solicitud implements java.io.Serializable
 
    private java.lang.String estadoScoreSolicitud;
 
+   private java.lang.Double riesgoTotal;
+
    public Solicitud()
    {
    }
@@ -134,12 +136,22 @@ public class Solicitud implements java.io.Serializable
       this.estadoScoreSolicitud = estadoScoreSolicitud;
    }
 
+   public java.lang.Double getRiesgoTotal()
+   {
+      return this.riesgoTotal;
+   }
+
+   public void setRiesgoTotal(java.lang.Double riesgoTotal)
+   {
+      this.riesgoTotal = riesgoTotal;
+   }
+
    public Solicitud(java.lang.Integer codigoProducto,
          java.lang.String grupoTipoCredito, java.lang.String tipoGarantia,
          java.lang.String tipoCliente, java.lang.Double montoSolicitado,
          java.lang.String tipoPersona, java.lang.String requiereGarantias,
          java.lang.String requiereGarantes, java.lang.String resultadoScore,
-         java.lang.String estadoScoreSolicitud)
+         java.lang.String estadoScoreSolicitud, java.lang.Double riesgoTotal)
    {
       this.codigoProducto = codigoProducto;
       this.grupoTipoCredito = grupoTipoCredito;
@@ -151,6 +163,7 @@ public class Solicitud implements java.io.Serializable
       this.requiereGarantes = requiereGarantes;
       this.resultadoScore = resultadoScore;
       this.estadoScoreSolicitud = estadoScoreSolicitud;
+      this.riesgoTotal = riesgoTotal;
    }
 
 }
