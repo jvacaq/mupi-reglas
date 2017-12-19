@@ -1,6 +1,6 @@
 package mupi.com.mortgageproject.loan;
 
-rule "RGS001-1"
+rule "RGS001-1/3" //REGLAS PARA DEFINIR CUANDO LA SOLICITUD REQUIERE GARANTES / GARANTIAS
             no-loop true
             ruleflow-group "RGS1"
             
@@ -17,7 +17,7 @@ rule "RGS001-1"
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
 end
 
-rule "RGS001-2"
+rule "RGS001-2" //REGLAS PARA DEFINIR CUANDO LA SOLICITUD REQUIERE GARANTES / GARANTIAS
             no-loop true
             ruleflow-group "RGS1"
             
@@ -51,7 +51,7 @@ end
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
 end*/
 
-rule "RGS001-4"
+rule "RGS001-4" //REGLAS PARA DEFINIR CUANDO LA SOLICITUD REQUIERE GARANTES / GARANTIAS
             no-loop true
             ruleflow-group "RGS1"
             
@@ -71,7 +71,7 @@ rule "RGS001-4"
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
 end
 
-rule "RGS002-1"
+rule "RGS002-1" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
             no-loop true
             ruleflow-group "RGS1"
             
