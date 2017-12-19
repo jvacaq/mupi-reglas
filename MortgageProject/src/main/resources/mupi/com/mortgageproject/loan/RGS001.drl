@@ -85,5 +85,5 @@ rule "RGS002-1"
             modify($p){
                 setResultadoScore("APROBADO")
             }
-            System.out.println("resultado score" + " " + $p.getResultadoScore() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
+            System.out.println("resultado score" + " " + $p.getResultadoScore());
 end
