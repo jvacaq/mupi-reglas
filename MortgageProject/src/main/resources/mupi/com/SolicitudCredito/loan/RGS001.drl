@@ -190,7 +190,7 @@ rule "RGS003-3" //REGLAS PARA SELECCIONAR EL FUNCIONARIO QUE GESTIONA LA SOLICIT
         
              then
             modify($p){
-                setConsultaDatosSolicitud("operadorCreoSolicitud")
+                setConsultaDatosSolicitud("operadorOficialCliente")
             }
             System.out.println("resultado consultaDatosSolicitud" + " " + $p.getConsultaDatosSolicitud());
 end
