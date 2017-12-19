@@ -1,6 +1,6 @@
 package mupi.com.mortgageproject.loan;
 
-rule "RGS002-1"
+rule "RGS2-1"
             no-loop true
             ruleflow-group "RGS2"
             
