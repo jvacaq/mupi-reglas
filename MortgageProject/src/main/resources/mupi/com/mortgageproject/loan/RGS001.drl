@@ -1,7 +1,7 @@
 package mupi.com.mortgageproject.loan;
 
 rule "RGS001-1/3" //REGLAS PARA DEFINIR CUANDO LA SOLICITUD REQUIERE GARANTES / GARANTIAS
-            no-loop true
+            lock-on-active true
             ruleflow-group "RGS1"
             
              when
@@ -18,7 +18,7 @@ rule "RGS001-1/3" //REGLAS PARA DEFINIR CUANDO LA SOLICITUD REQUIERE GARANTES / 
 end
 
 rule "RGS001-2" //REGLAS PARA DEFINIR CUANDO LA SOLICITUD REQUIERE GARANTES / GARANTIAS
-            no-loop true
+            lock-on-active true
             ruleflow-group "RGS1"
             
              when
@@ -52,7 +52,7 @@ end
 end*/
 
 rule "RGS001-4" //REGLAS PARA DEFINIR CUANDO LA SOLICITUD REQUIERE GARANTES / GARANTIAS
-            no-loop true
+            lock-on-active true
             ruleflow-group "RGS1"
             
              when
@@ -72,7 +72,7 @@ rule "RGS001-4" //REGLAS PARA DEFINIR CUANDO LA SOLICITUD REQUIERE GARANTES / GA
 end
 
 rule "RGS002-1" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
-            no-loop true
+            lock-on-active true
             ruleflow-group "RGS1"
             
              when
@@ -89,7 +89,7 @@ rule "RGS002-1" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
 end
 
 rule "RGS002-2/3" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
-            no-loop true
+            lock-on-active true
             ruleflow-group "RGS1"
             
              when
@@ -104,7 +104,7 @@ rule "RGS002-2/3" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
 end
 
 rule "RGS002-4" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
-            no-loop true
+            lock-on-active true
             ruleflow-group "RGS1"
             
              when
@@ -119,7 +119,7 @@ rule "RGS002-4" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
 end
 
 rule "RGS002-5" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
-            no-loop true
+            lock-on-active true
             ruleflow-group "RGS1"
             
              when
