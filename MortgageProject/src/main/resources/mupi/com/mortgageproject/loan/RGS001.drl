@@ -146,7 +146,7 @@ rule "RGS002-5" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
         
              then
             modify($p){
-                setResultadoScore("NEGADO")
+                setResultadoScore("ANALISIS")
             }
             System.out.println("resultado score" + " " + $p.getResultadoScore());
 end
