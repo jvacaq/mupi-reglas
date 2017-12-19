@@ -78,7 +78,7 @@ rule "RGS002-1" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
              when
            
             $p : Solicitud(grupoTipoCredito == "CONSUMO", tipoGarantia == "HIPOTECARIO",
-            montoSolicitado <= 15000, estadoScoreSolicitado == "APROBADO")
+            montoSolicitado <= 15000, estadoScoreSolicitud == "APROBADO")
             
              then
             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
