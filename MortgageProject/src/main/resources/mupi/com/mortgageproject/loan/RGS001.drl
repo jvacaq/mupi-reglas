@@ -110,7 +110,24 @@ rule "RGS002-4" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
              when
            
             $p : Solicitud(estadoScoreSolicitado == "NEGADO")
+        
+             then
+            modify($p){
+                setResultadoScore("NEGADO")
+            }
+            System.out.println("resultado score" + " " + $p.getResultadoScore());
+end
+
+rule "RGS002-5" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
+            no-loop true
+            ruleflow-group "RGS1"
             
+             when
+           
+            $p : Solicitud((grupoTipoCredito == null || grupoTipoCredito == ""), 
+            (tipoGarantia == null ||tipoGarantia == ""), (tipoCliente == null ||tipoCliente == ""), montoSolicitado == null, 
+            (estadoScoreSolicitado == null ||estadoScoreSolicitado == ""))
+        
              then
             modify($p){
                 setResultadoScore("NEGADO")
