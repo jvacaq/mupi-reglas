@@ -80,5 +80,12 @@
 <property name="outputBinding" value="solicitud/tipoPersona"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
+<field position="11" name="solicitud_codigoOficialCuenta" type="InputTextInteger" id="222716017">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;codigoOficialCuenta (solicitud)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="solicitud/codigoOficialCuenta"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
 <dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="solicitud" value="com.mupi.credito.reglas.Solicitud" id="solicitud"/>
 </form>
