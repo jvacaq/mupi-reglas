@@ -87,3 +87,19 @@ rule "RGS002-1" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
             }
             System.out.println("resultado score" + " " + $p.getResultadoScore());
 end
+
+rule "RGS002-2" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
+            no-loop true
+            ruleflow-group "RGS1"
+            
+             when
+           
+            $p : Solicitud(estadoScoreSolicitado == "APROBADO")
+            
+             then
+            System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
+            modify($p){
+                setResultadoScore("ANALISIS")
+            }
+            System.out.println("resultado score" + " " + $p.getResultadoScore());
+end
