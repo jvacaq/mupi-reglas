@@ -26,9 +26,9 @@ public class Solicitud implements java.io.Serializable
 
    private java.lang.String requiereGarantes;
 
-   private java.lang.String estadoScoreSolicitado;
-
    private java.lang.String resultadoScore;
+
+   private java.lang.String estadoScoreSolicitud;
 
    public Solicitud()
    {
@@ -114,16 +114,6 @@ public class Solicitud implements java.io.Serializable
       this.codigoProducto = codigoProducto;
    }
 
-   public java.lang.String getEstadoScoreSolicitado()
-   {
-      return this.estadoScoreSolicitado;
-   }
-
-   public void setEstadoScoreSolicitado(java.lang.String estadoScoreSolicitado)
-   {
-      this.estadoScoreSolicitado = estadoScoreSolicitado;
-   }
-
    public java.lang.String getResultadoScore()
    {
       return this.resultadoScore;
@@ -134,12 +124,22 @@ public class Solicitud implements java.io.Serializable
       this.resultadoScore = resultadoScore;
    }
 
+   public java.lang.String getEstadoScoreSolicitud()
+   {
+      return this.estadoScoreSolicitud;
+   }
+
+   public void setEstadoScoreSolicitud(java.lang.String estadoScoreSolicitud)
+   {
+      this.estadoScoreSolicitud = estadoScoreSolicitud;
+   }
+
    public Solicitud(java.lang.Integer codigoProducto,
          java.lang.String grupoTipoCredito, java.lang.String tipoGarantia,
          java.lang.String tipoCliente, java.lang.Double montoSolicitado,
          java.lang.String tipoPersona, java.lang.String requiereGarantias,
-         java.lang.String requiereGarantes,
-         java.lang.String estadoScoreSolicitado, java.lang.String resultadoScore)
+         java.lang.String requiereGarantes, java.lang.String resultadoScore,
+         java.lang.String estadoScoreSolicitud)
    {
       this.codigoProducto = codigoProducto;
       this.grupoTipoCredito = grupoTipoCredito;
@@ -149,8 +149,8 @@ public class Solicitud implements java.io.Serializable
       this.tipoPersona = tipoPersona;
       this.requiereGarantias = requiereGarantias;
       this.requiereGarantes = requiereGarantes;
-      this.estadoScoreSolicitado = estadoScoreSolicitado;
       this.resultadoScore = resultadoScore;
+      this.estadoScoreSolicitud = estadoScoreSolicitud;
    }
 
 }
