@@ -217,7 +217,7 @@ rule "RGS004-2" //REGLAS PARA SETERAR EL NIVEL Y ORDEN  DE LA SOLICITUD
             
              when
            
-            $p : Solicitud((codigoOficialCuenta == null, codigoProducto == null,  
+            $p : Solicitud(codigoOficialCuenta == null, codigoProducto == null,  
             (nombreProducto == null ||nombreProducto == ""), (grupoTipoCredito == null ||grupoTipoCredito == ""), 
             (tipoGarantia == null ||tipoGarantia == ""),(tipoCliente == null ||tipoCliente == ""), 
             (tipoPersona == null ||tipoPersona == ""), montoSolicitado == null)
