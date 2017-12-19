@@ -156,7 +156,7 @@ rule "RGS003-1" //REGLAS PARA SELECCIONAR EL FUNCIONARIO QUE GESTIONA LA SOLICIT
             
              when
            
-            $p : Solicitud(agencia != "39", ratificada == null)
+            $p : Solicitud(agencia != "39", agencia != "", agencia != null, ratificada == null)
         
              then
             modify($p){
