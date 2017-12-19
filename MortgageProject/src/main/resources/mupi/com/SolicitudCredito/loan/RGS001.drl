@@ -208,6 +208,6 @@ rule "RGS004-1" //REGLAS PARA SETERAR EL NIVEL Y ORDEN  DE LA SOLICITUD
                 setNivelActual(18),
                 setOrdenComite(0)
             }
-            System.out.println("resultado nivelActual" + " " + $p.getNivelActual() + "resultado ordenComite" + " " + $p.getOrdenComite());
+            System.out.println("resultado nivelActual" + " " + $p.getNivelActual() + " " + "resultado ordenComite" + " " + $p.getOrdenComite());
 end
 
