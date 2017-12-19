@@ -164,3 +164,21 @@ rule "RGS003-1" //REGLAS PARA SELECCIONAR EL FUNCIONARIO QUE GESTIONA LA SOLICIT
             }
             System.out.println("resultado consultaDatosSolicitud" + " " + $p.getConsultaDatosSolicitud());
 end
+
+rule "RGS003-2" //REGLAS PARA SELECCIONAR EL FUNCIONARIO QUE GESTIONA LA SOLICITUD DE CREDITO
+            lock-on-active true
+            ruleflow-group "RGS1"
+            
+             when
+           
+            $p : Solicitud(agencia == "39", ratificada != 1)
+        
+             then
+            modify($p){
+                setConsultaDatosSolicitud("operadorCreoSolicitud")
+            }
+            System.out.println("resultado consultaDatosSolicitud" + " " + $p.getConsultaDatosSolicitud());
+end
+
+
+
