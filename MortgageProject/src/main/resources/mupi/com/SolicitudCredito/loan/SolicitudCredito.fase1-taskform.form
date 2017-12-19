@@ -3,83 +3,6 @@
 <property name="name" value="SolicitudCredito.fase1-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="16" name="solicitud_solicitudRatificadaAprobada" type="InputTextInteger" id="1353342763">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;solicitudRatificadaAprobada (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/solicitudRatificadaAprobada"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="2" name="solicitud_codigoProducto" type="InputTextInteger" id="505471010">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;codigoProducto (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/codigoProducto"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="11" name="solicitud_ratificadaExt" type="InputText" id="72980379">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;ratificadaExt (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/ratificadaExt"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="7" name="solicitud_nivelActual" type="InputTextInteger" id="109547940">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;nivelActual (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/nivelActual"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="19" name="solicitud_tipoPersona" type="InputText" id="357038980">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;tipoPersona (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/tipoPersona"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="14" name="solicitud_resultadoScore" type="InputText" id="1213252308">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;resultadoScore (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/resultadoScore"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="6" name="solicitud_montoSolicitado" type="InputTextDouble" id="782940943">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;montoSolicitado (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/montoSolicitado"/>
-<property name="fieldClass" value="java.lang.Double"/>
-</field>
-<field position="1" name="solicitud_codigoOficialCuenta" type="InputTextInteger" id="61772231">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;codigoOficialCuenta (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/codigoOficialCuenta"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="10" name="solicitud_ratificada" type="InputTextInteger" id="1042069430">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;ratificada (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/ratificada"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="18" name="solicitud_tipoGarantia" type="InputText" id="1859500735">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;tipoGarantia (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/tipoGarantia"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="4" name="solicitud_estadoScoreSolicitud" type="InputText" id="1598475405">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;estadoScoreSolicitud (solicitud)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/estadoScoreSolicitud"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
 <field position="0" name="solicitud_agencia" type="InputText" id="69324557">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;agencia (solicitud)quot;"/>
@@ -87,60 +10,74 @@
 <property name="outputBinding" value="solicitud/agencia"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="9" name="solicitud_ordenComite" type="InputTextInteger" id="978548188">
+<field position="1" name="solicitud_codigoProducto" type="InputTextInteger" id="505471010">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;ordenComite (solicitud)quot;"/>
+<property name="label" value="quot;enquot;,quot;codigoProducto (solicitud)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/ordenComite"/>
+<property name="outputBinding" value="solicitud/codigoProducto"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="8" name="solicitud_nombreProducto" type="InputText" id="1861503910">
+<field position="2" name="solicitud_estadoScoreSolicitud" type="InputText" id="1598475405">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;nombreProducto (solicitud)quot;"/>
+<property name="label" value="quot;enquot;,quot;estadoScoreSolicitud (solicitud)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/nombreProducto"/>
+<property name="outputBinding" value="solicitud/estadoScoreSolicitud"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="17" name="solicitud_tipoCliente" type="InputText" id="899154571">
+<field position="3" name="solicitud_grupoTipoCredito" type="InputText" id="869534313">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;tipoCliente (solicitud)quot;"/>
+<property name="label" value="quot;enquot;,quot;grupoTipoCredito (solicitud)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/tipoCliente"/>
+<property name="outputBinding" value="solicitud/grupoTipoCredito"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="3" name="solicitud_consultaDatosSolicitud" type="InputText" id="1489929688">
+<field position="4" name="solicitud_montoSolicitado" type="InputTextDouble" id="782940943">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;consultaDatosSolicitud (solicitud)quot;"/>
+<property name="label" value="quot;enquot;,quot;montoSolicitado (solicitud)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/consultaDatosSolicitud"/>
-<property name="fieldClass" value="java.lang.String"/>
+<property name="outputBinding" value="solicitud/montoSolicitado"/>
+<property name="fieldClass" value="java.lang.Double"/>
 </field>
-<field position="15" name="solicitud_riesgoTotal" type="InputTextDouble" id="934556172">
+<field position="5" name="solicitud_nivelActual" type="InputTextInteger" id="109547940">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;nivelActual (solicitud)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="solicitud/nivelActual"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="6" name="solicitud_ratificada" type="InputTextInteger" id="1042069430">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;ratificada (solicitud)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="solicitud/ratificada"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="7" name="solicitud_riesgoTotal" type="InputTextDouble" id="934556172">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;riesgoTotal (solicitud)quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="solicitud/riesgoTotal"/>
 <property name="fieldClass" value="java.lang.Double"/>
 </field>
-<field position="13" name="solicitud_requiereGarantias" type="InputText" id="449339249">
+<field position="8" name="solicitud_tipoCliente" type="InputText" id="899154571">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;requiereGarantias (solicitud)quot;"/>
+<property name="label" value="quot;enquot;,quot;tipoCliente (solicitud)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/requiereGarantias"/>
+<property name="outputBinding" value="solicitud/tipoCliente"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="12" name="solicitud_requiereGarantes" type="InputText" id="2116036730">
+<field position="9" name="solicitud_tipoGarantia" type="InputText" id="1859500735">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;requiereGarantes (solicitud)quot;"/>
+<property name="label" value="quot;enquot;,quot;tipoGarantia (solicitud)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/requiereGarantes"/>
+<property name="outputBinding" value="solicitud/tipoGarantia"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="5" name="solicitud_grupoTipoCredito" type="InputText" id="869534313">
+<field position="10" name="solicitud_tipoPersona" type="InputText" id="357038980">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;grupoTipoCredito (solicitud)quot;"/>
+<property name="label" value="quot;enquot;,quot;tipoPersona (solicitud)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="solicitud/grupoTipoCredito"/>
+<property name="outputBinding" value="solicitud/tipoPersona"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="solicitud" value="com.mupi.credito.reglas.Solicitud" id="solicitud"/>
