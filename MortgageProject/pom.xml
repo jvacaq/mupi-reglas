@@ -3,10 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mupi.credito</groupId>
-  <artifactId>MortgageProject</artifactId>
+  <artifactId>SolicitudCredito</artifactId>
   <version>1.0</version>
   <packaging>kjar</packaging>
-  <name>MortgageProject</name>
+  <name>SolicitudCredito</name>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
