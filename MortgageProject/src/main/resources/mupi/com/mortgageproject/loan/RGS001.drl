@@ -109,7 +109,7 @@ rule "RGS002-3" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
             
              when
            
-            $p : Solicitud(estadoScoreSolicitado =="ANALISIS")
+            $p : Solicitud(estadoScoreSolicitado == "ANALISIS")
             
              then
             modify($p){
