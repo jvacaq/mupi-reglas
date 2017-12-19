@@ -195,3 +195,19 @@ rule "RGS003-3" //REGLAS PARA SELECCIONAR EL FUNCIONARIO QUE GESTIONA LA SOLICIT
             System.out.println("resultado consultaDatosSolicitud" + " " + $p.getConsultaDatosSolicitud());
 end
 
+rule "RGS004-1" //REGLAS PARA SETERAR EL NIVEL Y ORDEN  DE LA SOLICITUD
+            lock-on-active true
+            ruleflow-group "RGS1"
+            
+             when
+           
+            $p : Solicitud(codigoOficialCuenta == 200)
+        
+             then
+            modify($p){
+                setNivelActual(18),
+                setOrdenComite(0)
+            }
+            System.out.println("resultado nivelActual" + " " + $p.getNivelActual() + "resultado ordenComite" + " " + $p.getOrdenComite());
+end
+
