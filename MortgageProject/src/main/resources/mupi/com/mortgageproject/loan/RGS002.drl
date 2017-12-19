@@ -12,8 +12,7 @@ rule "RGS002-1"
              then
             System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
             modify($p){
-              setRequiereGarantias("NO"),
-              setRequiereGarantes("NO")
+                setResultadoScore("APROBADO")
             }
-            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
+            System.out.println("resultado score" + " " + $p.getResultadoScore() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
 end
