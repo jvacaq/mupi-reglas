@@ -56,8 +56,7 @@ rule "RGS001-4" //REGLAS PARA DEFINIR CUANDO LA SOLICITUD REQUIERE GARANTES / GA
             ruleflow-group "RGS1"
             
              when
-            // 
-            //montoSolicitado == null, tipoPersona == null
+            
             $p : Solicitud(codigoProducto == null, (grupoTipoCredito == null || grupoTipoCredito == ""), 
             (tipoGarantia == null ||tipoGarantia == ""), (tipoCliente == null ||tipoCliente == ""), montoSolicitado == null, 
             (tipoPersona == null ||tipoPersona == ""))
@@ -149,4 +148,19 @@ rule "RGS002-5" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
                 setResultadoScore("ANALISIS")
             }
             System.out.println("resultado score" + " " + $p.getResultadoScore());
+end
+
+rule "RGS003-1" //REGLAS PARA SELECCIONAR EL FUNCIONARIO QUE GESTIONA LA SOLICITUD DE CREDITO
+            lock-on-active true
+            ruleflow-group "RGS1"
+            
+             when
+           
+            $p : Solicitud(agencia != "39", ratificada == null)
+        
+             then
+            modify($p){
+                setConsultaDatosSolicitud("operadorOficialCliente")
+            }
+            System.out.println("resultado score" + " " + $p.getConsultaDatosSolicitud());
 end
