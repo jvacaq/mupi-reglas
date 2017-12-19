@@ -140,7 +140,7 @@ rule "RGS002-5" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
            
             $p : Solicitud((grupoTipoCredito == null || grupoTipoCredito == ""), 
             (tipoGarantia == null ||tipoGarantia == ""), (tipoCliente == null ||tipoCliente == ""), montoSolicitado == null, 
-            (estadoScoreSolicitado == null ||estadoScoreSolicitud == ""))
+            (estadoScoreSolicitud == null ||estadoScoreSolicitud == ""))
         
              then
             modify($p){
