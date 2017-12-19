@@ -71,3 +71,19 @@ rule "RGS001-4"
             System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
 end
 
+rule "RGS002-1"
+            no-loop true
+            ruleflow-group "RGS1"
+            
+             when
+           
+            $p : Solicitud(grupoTipoCredito == "CONSUMO", tipoGarantia == "HIPOTECARIO",
+            montoSolicitado <= 15000, estadoScoreSolicitado == "APROBADO")
+            
+             then
+            System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
+            modify($p){
+                setResultadoScore("APROBADO")
+            }
+            System.out.println("resultado score" + " " + $p.getResultadoScore() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
+end
