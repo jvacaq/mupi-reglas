@@ -123,7 +123,7 @@ rule "RGS002-4" //REGLAS PARA SETEAR EL VALOR FINAL DEL SCORE DE CREDITO
             
              when
            
-            $p : Solicitud(estadoScoreSolicitado == "NEGADO")
+            $p : Solicitud(estadoScoreSolicitud == "NEGADO")
         
              then
             modify($p){
