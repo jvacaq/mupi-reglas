@@ -268,7 +268,7 @@ rule "RGS005-3" //REGLAS PARA SETERAR EL VALOR DE LA VARIABLE solicitudRatificad
         
              then
             modify($p){
-                setSolicitudRatificadaAprobada(0)
+                setSolicitudRatificadaAprobada(00)
             }
             System.out.println("resultado solicitudRatificadaAprobada" + " " + $p.getSolicitudRatificadaAprobada());
 end
