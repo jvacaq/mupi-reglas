@@ -257,3 +257,18 @@ rule "RGS005-2" //REGLAS PARA SETERAR EL VALOR DE LA VARIABLE solicitudRatificad
             }
             System.out.println("resultado solicitudRatificadaAprobada" + " " + $p.getSolicitudRatificadaAprobada());
 end
+
+rule "RGS005-3" //REGLAS PARA SETERAR EL VALOR DE LA VARIABLE solicitudRatificadaAprobada
+            lock-on-active true
+            ruleflow-group "RGS1"
+            
+             when
+           
+            $p : Solicitud(ratificada == null, (ratificadaExt == null || ratificadaExt == "")
+        
+             then
+            modify($p){
+                setSolicitudRatificadaAprobada(0)
+            }
+            System.out.println("resultado solicitudRatificadaAprobada" + " " + $p.getSolicitudRatificadaAprobada());
+end
