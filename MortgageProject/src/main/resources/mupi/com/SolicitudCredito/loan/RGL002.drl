@@ -14,6 +14,6 @@ rule "RGL001-1" //VALIDA APROBACION TASA
               setRequiereAprobacion("SI")
               
             }
-            System.out.println("requiere aprobacion" + " " + $p.getRequiereAprobacion() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
+            System.out.println("requiere aprobacion" + " " + $p.getRequiereAprobacion());
 end
 
