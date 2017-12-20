@@ -240,7 +240,7 @@ rule "RGS005-1" //REGLAS PARA SETERAR EL NIVEL Y ORDEN  DE LA SOLICITUD
         
              then
             modify($p){
-                setSolicitudRatificadaAprobadal(1)
+                setSolicitudRatificadaAprobada(1)
             }
             System.out.println("resultado solicitudRatificadaAprobada" + " " + $p.getSolicitudRatificadaAprobada());
 end
