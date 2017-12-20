@@ -11,6 +11,8 @@ public class Puntos implements java.io.Serializable
 
    private java.math.BigDecimal puntosPropuestos;
 
+   private java.lang.String requiereAprobacion;
+
    public Puntos()
    {
    }
@@ -25,9 +27,21 @@ public class Puntos implements java.io.Serializable
       this.puntosPropuestos = puntosPropuestos;
    }
 
-   public Puntos(java.math.BigDecimal puntosPropuestos)
+   public java.lang.String getRequiereAprobacion()
+   {
+      return this.requiereAprobacion;
+   }
+
+   public void setRequiereAprobacion(java.lang.String requiereAprobacion)
+   {
+      this.requiereAprobacion = requiereAprobacion;
+   }
+
+   public Puntos(java.math.BigDecimal puntosPropuestos,
+         java.lang.String requiereAprobacion)
    {
       this.puntosPropuestos = puntosPropuestos;
+      this.requiereAprobacion = requiereAprobacion;
    }
 
 }
