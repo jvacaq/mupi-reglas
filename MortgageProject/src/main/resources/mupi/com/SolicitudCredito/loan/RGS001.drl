@@ -26,7 +26,6 @@ rule "RGS001-2" //REGLAS PARA DEFINIR CUANDO LA SOLICITUD REQUIERE GARANTES / GA
             $p : Solicitud(grupoTipoCredito == "CONSUMO" && tipoGarantia == "QUIROGRAFARIO")
             
              then
-            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + " " + $p.getRequiereGarantes());
             modify($p){
               setRequiereGarantias("NO"),
               setRequiereGarantes("SI")
@@ -62,7 +61,6 @@ rule "RGS001-4" //REGLAS PARA DEFINIR CUANDO LA SOLICITUD REQUIERE GARANTES / GA
             (tipoPersona == null ||tipoPersona == ""))
             
              then
-            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() +  "requiere garantes" + " " + $p.getRequiereGarantes());
             modify($p){
               setRequiereGarantias("SI"),
               setRequiereGarantes("NO")
