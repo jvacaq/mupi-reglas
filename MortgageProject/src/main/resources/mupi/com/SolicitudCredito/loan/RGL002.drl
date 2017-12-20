@@ -6,7 +6,7 @@ rule "RGL001-1" //VALIDA APROBACION TASA
             
              when
            
-            $p : Puntos(puntosPropuestos > 0, puntosPropuestos <= 1.5)
+            $p : Puntos(com.mupi.credito.reglas.Puntos( )com.mupi.credito.reglas.Puntos( )com.mupi.credito.reglas.Puntos( )puntosPropuestos > 0, puntosPropuestos <= 1.5)
             
              then
              
