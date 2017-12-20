@@ -228,13 +228,28 @@ rule "RGS004-2" //REGLAS PARA SETERAR EL NIVEL Y ORDEN  DE LA SOLICITUD
             System.out.println("resultado nivelActual" + " " + $p.getNivelActual() + " " + "resultado ordenComite" + " " + $p.getOrdenComite());
 end
 
-rule "RGS005-1" //REGLAS PARA SETERAR EL NIVEL Y ORDEN  DE LA SOLICITUD
+rule "RGS005-1" //REGLAS PARA SETERAR EL VALOR DE LA VARIABLE solicitudRatificadaAprobada
             lock-on-active true
             ruleflow-group "RGS1"
             
              when
            
             $p : Solicitud(ratificada == 0, ratificadaExt == "SI")
+        
+             then
+            modify($p){
+                setSolicitudRatificadaAprobada(1)
+            }
+            System.out.println("resultado solicitudRatificadaAprobada" + " " + $p.getSolicitudRatificadaAprobada());
+end
+
+rule "RGS005-2" //REGLAS PARA SETERAR EL VALOR DE LA VARIABLE solicitudRatificadaAprobada
+            lock-on-active true
+            ruleflow-group "RGS1"
+            
+             when
+           
+            $p : Solicitud(ratificada == 1, ratificadaExt != "SI")
         
              then
             modify($p){
