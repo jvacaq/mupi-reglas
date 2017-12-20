@@ -9,7 +9,7 @@ rule "RGS001-1/3" //REGLAS PARA DEFINIR CUANDO LA SOLICITUD REQUIERE GARANTES / 
             $p : Solicitud((codigoProducto == 36001 || (tipoGarantia == "SIN GARANTIA" && tipoPersona == "JURIDICA")))
             
              then
-            System.out.println("requiere gatantias" + " " + $p.getCodigoProducto() + " " + $p.getMontoSolicitado());
+             
             modify($p){
               setRequiereGarantias("NO"),
               setRequiereGarantes("NO")
