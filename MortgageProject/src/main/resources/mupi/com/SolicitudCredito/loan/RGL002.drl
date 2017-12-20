@@ -1,6 +1,6 @@
 package com.mupi.credito.reglas
 
-rule "RGL001-1" //VALIDA APROBACION TASA
+rule "RGL002-1" //VALIDA APROBACION TASA
             lock-on-active true
             ruleflow-group "RGL2"
             
@@ -17,7 +17,7 @@ rule "RGL001-1" //VALIDA APROBACION TASA
             System.out.println("requiere aprobacion" + " " + $p.getRequiereAprobacion());
 end
 
-rule "RGL001-2" //VALIDA APROBACION TASA
+rule "RGL002-2" //VALIDA APROBACION TASA
             lock-on-active true
             ruleflow-group "RGL2"
             
