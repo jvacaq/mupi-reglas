@@ -17,3 +17,19 @@ rule "RGL001-1" //VALIDA APROBACION TASA
             System.out.println("requiere aprobacion" + " " + $p.getRequiereAprobacion());
 end
 
+rule "RGL001-2" //VALIDA APROBACION TASA
+            lock-on-active true
+            ruleflow-group "RGL2"
+            
+             when
+           
+            $p : Puntos(puntosPropuestos > 1.5, puntosPropuestos <= 3)
+            
+             then
+             
+            modify($p){
+              setRequiereAprobacion("SI")
+              
+            }
+            System.out.println("requiere aprobacion" + " " + $p.getRequiereAprobacion());
+end
