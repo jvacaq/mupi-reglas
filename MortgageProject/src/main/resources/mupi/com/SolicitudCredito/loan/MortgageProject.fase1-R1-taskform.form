@@ -1,0 +1,28 @@
+
+<form id="332964740">
+<property name="name" value="MortgageProject.fase1-R1-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="1" name="porcentajePTC_ptc" type="InputTextDouble" id="801803867">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;ptc (porcentajePTC)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="porcentajePTC/ptc"/>
+<property name="fieldClass" value="java.lang.Double"/>
+</field>
+<field position="0" name="porcentajePTC_monto" type="InputTextDouble" id="1902370408">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;monto (porcentajePTC)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="porcentajePTC/monto"/>
+<property name="fieldClass" value="java.lang.Double"/>
+</field>
+<field position="2" name="porcentajePTC_superaPorcentaje" type="InputText" id="394662489">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;superaPorcentaje (porcentajePTC)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="porcentajePTC/superaPorcentaje"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="porcentajePTC" value="com.mupi.credito.reglas.PorcentajePTC" id="porcentajePTC"/>
+</form>
