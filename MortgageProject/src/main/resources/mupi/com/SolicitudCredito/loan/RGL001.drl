@@ -16,7 +16,7 @@ rule "RGl001-1" //VALLIDAR PORCENTAJE PATRIMONIO TECNICO
             System.out.println("supera porcentaje" + " " + $p.getSuperaPorcentaje());
 end
 
-rule "RGl001-1" //VALLIDAR PORCENTAJE PATRIMONIO TECNICO
+rule "RGl001-2" //VALLIDAR PORCENTAJE PATRIMONIO TECNICO
             lock-on-active true
             ruleflow-group "RGL1"
             
