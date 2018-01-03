@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_H0jTcPC2EeeVjoJoh36brg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" exporter="jBPM Designer" exporterVersion="6.2.0" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.omg.org/bpmn20" typeLanguage="http://www.java.com/javaTypes">
-  <bpmn2:itemDefinition id="_puntosItem" structureRef="com.mupi.credito.reglas.Puntos"/>
-  <bpmn2:itemDefinition id="_montoItem" structureRef="com.mupi.credito.reglas.PorcentajePTC"/>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_aOQ1sPC2EeeVjoJoh36brg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" exporter="jBPM Designer" exporterVersion="6.2.0" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.omg.org/bpmn20" typeLanguage="http://www.java.com/javaTypes">
+  <bpmn2:itemDefinition id="_porcentajePTCItem" structureRef="com.mupi.credito.reglas.PorcentajePTC"/>
   <bpmn2:itemDefinition id="__34986787-C503-4330-9951-2BDB34A21B61_SkippableInputXItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="__3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E__puntosInputXItem" structureRef="com.mupi.credito.reglas.Puntos"/>
   <bpmn2:itemDefinition id="__3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E__puntosOutputXItem" structureRef="com.mupi.credito.reglas.Puntos"/>
   <bpmn2:process id="MortgageProject.fase1-R1" drools:packageName="org.jbpm" drools:version="1.0" name="fase1-R1" isExecutable="true">
-    <bpmn2:property id="puntos" itemSubjectRef="_puntosItem"/>
-    <bpmn2:property id="monto" itemSubjectRef="_montoItem"/>
+    <bpmn2:property id="porcentajePTC" itemSubjectRef="_porcentajePTCItem"/>
     <bpmn2:startEvent id="processStartEvent" drools:selectable="true" color:background-color="#9acd32" color:border-color="#000000" color:color="#000000" name="">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
@@ -24,12 +22,12 @@
       </bpmn2:extensionElements>
       <bpmn2:incoming>_905383CA-6F9F-4B00-8029-86E2BC75DF76</bpmn2:incoming>
       <bpmn2:outgoing>_2E823D8B-7EEB-42B9-A4F9-7E4EB9BCBE0B</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_H0jTcfC2EeeVjoJoh36brg">
+      <bpmn2:ioSpecification id="_aORcwPC2EeeVjoJoh36brg">
         <bpmn2:dataInput id="_34986787-C503-4330-9951-2BDB34A21B61_SkippableInputX" drools:dtype="Object" itemSubjectRef="__34986787-C503-4330-9951-2BDB34A21B61_SkippableInputXItem" name="Skippable"/>
-        <bpmn2:inputSet id="_H0jTcvC2EeeVjoJoh36brg">
+        <bpmn2:inputSet id="_aORcwfC2EeeVjoJoh36brg">
           <bpmn2:dataInputRefs>_34986787-C503-4330-9951-2BDB34A21B61_SkippableInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_H0jTc_C2EeeVjoJoh36brg"/>
+        <bpmn2:outputSet id="_aORcwvC2EeeVjoJoh36brg"/>
       </bpmn2:ioSpecification>
       <bpmn2:script><![CDATA[//codigo = "123";
 //solicitud.setCodigoProducto(codigo);
@@ -46,21 +44,21 @@ System.out.println("Monto vrs PTC" + " " + puntos.getPuntosPropuestos());
       </bpmn2:extensionElements>
       <bpmn2:incoming>_2E823D8B-7EEB-42B9-A4F9-7E4EB9BCBE0B</bpmn2:incoming>
       <bpmn2:outgoing>_4F968339-B486-4D13-9208-F15F81DDB84D</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_H0jTdPC2EeeVjoJoh36brg">
+      <bpmn2:ioSpecification id="_aORcw_C2EeeVjoJoh36brg">
         <bpmn2:dataInput id="_3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E__puntosInputX" drools:dtype="com.mupi.credito.reglas.Puntos" itemSubjectRef="__3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E__puntosInputXItem" name="_puntos"/>
         <bpmn2:dataOutput id="_3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E__puntosOutputX" drools:dtype="com.mupi.credito.reglas.Puntos" itemSubjectRef="__3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E__puntosOutputXItem" name="_puntos"/>
-        <bpmn2:inputSet id="_H0jTdfC2EeeVjoJoh36brg">
+        <bpmn2:inputSet id="_aORcxPC2EeeVjoJoh36brg">
           <bpmn2:dataInputRefs>_3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E__puntosInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_H0jTdvC2EeeVjoJoh36brg">
+        <bpmn2:outputSet id="_aORcxfC2EeeVjoJoh36brg">
           <bpmn2:dataOutputRefs>_3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E__puntosOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_H0jTd_C2EeeVjoJoh36brg">
+      <bpmn2:dataInputAssociation id="_aORcxvC2EeeVjoJoh36brg">
         <bpmn2:sourceRef>puntos</bpmn2:sourceRef>
         <bpmn2:targetRef>_3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E__puntosInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_H0jTePC2EeeVjoJoh36brg">
+      <bpmn2:dataOutputAssociation id="_aORcx_C2EeeVjoJoh36brg">
         <bpmn2:sourceRef>_3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E__puntosOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>puntos</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -74,43 +72,43 @@ System.out.println("Monto vrs PTC" + " " + puntos.getPuntosPropuestos());
         </drools:metaData>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_4F968339-B486-4D13-9208-F15F81DDB84D</bpmn2:incoming>
-      <bpmn2:terminateEventDefinition id="_H0jTefC2EeeVjoJoh36brg"/>
+      <bpmn2:terminateEventDefinition id="_aORcyPC2EeeVjoJoh36brg"/>
     </bpmn2:endEvent>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_H0jTevC2EeeVjoJoh36brg">
-    <bpmndi:BPMNPlane id="_H0jTe_C2EeeVjoJoh36brg" bpmnElement="MortgageProject.fase1-R1">
-      <bpmndi:BPMNShape id="_H0j6gPC2EeeVjoJoh36brg" bpmnElement="processStartEvent">
+  <bpmndi:BPMNDiagram id="_aORcyfC2EeeVjoJoh36brg">
+    <bpmndi:BPMNPlane id="_aORcyvC2EeeVjoJoh36brg" bpmnElement="MortgageProject.fase1-R1">
+      <bpmndi:BPMNShape id="_aORcy_C2EeeVjoJoh36brg" bpmnElement="processStartEvent">
         <dc:Bounds height="30.0" width="30.0" x="120.0" y="165.0"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_H0j6gfC2EeeVjoJoh36brg" bpmnElement="_34986787-C503-4330-9951-2BDB34A21B61">
+      <bpmndi:BPMNShape id="_aORczPC2EeeVjoJoh36brg" bpmnElement="_34986787-C503-4330-9951-2BDB34A21B61">
         <dc:Bounds height="80.0" width="100.0" x="195.0" y="140.0"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_H0j6gvC2EeeVjoJoh36brg" bpmnElement="_3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E">
+      <bpmndi:BPMNShape id="_aORczfC2EeeVjoJoh36brg" bpmnElement="_3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E">
         <dc:Bounds height="80.0" width="100.0" x="340.0" y="140.0"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_H0j6g_C2EeeVjoJoh36brg" bpmnElement="_89335F69-7485-4758-A295-120E4A274D23">
+      <bpmndi:BPMNShape id="_aORczvC2EeeVjoJoh36brg" bpmnElement="_89335F69-7485-4758-A295-120E4A274D23">
         <dc:Bounds height="28.0" width="28.0" x="485.0" y="166.0"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="_H0j6hPC2EeeVjoJoh36brg" bpmnElement="_905383CA-6F9F-4B00-8029-86E2BC75DF76" sourceElement="_H0j6gPC2EeeVjoJoh36brg" targetElement="_H0j6gfC2EeeVjoJoh36brg">
+      <bpmndi:BPMNEdge id="_aORcz_C2EeeVjoJoh36brg" bpmnElement="_905383CA-6F9F-4B00-8029-86E2BC75DF76" sourceElement="_aORcy_C2EeeVjoJoh36brg" targetElement="_aORczPC2EeeVjoJoh36brg">
         <di:waypoint xsi:type="dc:Point" x="135.0" y="180.0"/>
         <di:waypoint xsi:type="dc:Point" x="245.0" y="180.0"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="_H0j6hfC2EeeVjoJoh36brg" bpmnElement="_2E823D8B-7EEB-42B9-A4F9-7E4EB9BCBE0B" sourceElement="_H0j6gfC2EeeVjoJoh36brg" targetElement="_H0j6gvC2EeeVjoJoh36brg">
+      <bpmndi:BPMNEdge id="_aORc0PC2EeeVjoJoh36brg" bpmnElement="_2E823D8B-7EEB-42B9-A4F9-7E4EB9BCBE0B" sourceElement="_aORczPC2EeeVjoJoh36brg" targetElement="_aORczfC2EeeVjoJoh36brg">
         <di:waypoint xsi:type="dc:Point" x="245.0" y="180.0"/>
         <di:waypoint xsi:type="dc:Point" x="390.0" y="180.0"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="_H0j6hvC2EeeVjoJoh36brg" bpmnElement="_4F968339-B486-4D13-9208-F15F81DDB84D" sourceElement="_H0j6gvC2EeeVjoJoh36brg" targetElement="_H0j6g_C2EeeVjoJoh36brg">
+      <bpmndi:BPMNEdge id="_aORc0fC2EeeVjoJoh36brg" bpmnElement="_4F968339-B486-4D13-9208-F15F81DDB84D" sourceElement="_aORczfC2EeeVjoJoh36brg" targetElement="_aORczvC2EeeVjoJoh36brg">
         <di:waypoint xsi:type="dc:Point" x="390.0" y="180.0"/>
         <di:waypoint xsi:type="dc:Point" x="499.0" y="180.0"/>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_H0j6h_C2EeeVjoJoh36brg" type="BPSimData">
+  <bpmn2:relationship id="_aORc0vC2EeeVjoJoh36brg" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters" baseTimeUnit="min"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_34986787-C503-4330-9951-2BDB34A21B61" id="_H0j6iPC2EeeVjoJoh36brg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_34986787-C503-4330-9951-2BDB34A21B61" id="_aORc0_C2EeeVjoJoh36brg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:UniformDistribution max="10.0" min="5.0"/>
@@ -122,28 +120,28 @@ System.out.println("Monto vrs PTC" + " " + puntos.getPuntosPropuestos());
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_2E823D8B-7EEB-42B9-A4F9-7E4EB9BCBE0B" id="_H0j6ifC2EeeVjoJoh36brg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_2E823D8B-7EEB-42B9-A4F9-7E4EB9BCBE0B" id="_aORc1PC2EeeVjoJoh36brg">
             <bpsim:ControlParameters xsi:type="bpsim:ControlParameters">
               <bpsim:Probability xsi:type="bpsim:Parameter">
                 <bpsim:FloatingParameter value="100.0"/>
               </bpsim:Probability>
             </bpsim:ControlParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_89335F69-7485-4758-A295-120E4A274D23" id="_H0j6ivC2EeeVjoJoh36brg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_89335F69-7485-4758-A295-120E4A274D23" id="_aORc1fC2EeeVjoJoh36brg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:UniformDistribution max="10.0" min="5.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_905383CA-6F9F-4B00-8029-86E2BC75DF76" id="_H0j6i_C2EeeVjoJoh36brg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_905383CA-6F9F-4B00-8029-86E2BC75DF76" id="_aOSD0PC2EeeVjoJoh36brg">
             <bpsim:ControlParameters xsi:type="bpsim:ControlParameters">
               <bpsim:Probability xsi:type="bpsim:Parameter">
                 <bpsim:FloatingParameter value="100.0"/>
               </bpsim:Probability>
             </bpsim:ControlParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="processStartEvent" id="_H0j6jPC2EeeVjoJoh36brg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="processStartEvent" id="_aOSD0fC2EeeVjoJoh36brg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:UniformDistribution max="10.0" min="5.0"/>
@@ -155,14 +153,14 @@ System.out.println("Monto vrs PTC" + " " + puntos.getPuntosPropuestos());
               </bpsim:Probability>
             </bpsim:ControlParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_4F968339-B486-4D13-9208-F15F81DDB84D" id="_H0j6jfC2EeeVjoJoh36brg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_4F968339-B486-4D13-9208-F15F81DDB84D" id="_aOSD0vC2EeeVjoJoh36brg">
             <bpsim:ControlParameters xsi:type="bpsim:ControlParameters">
               <bpsim:Probability xsi:type="bpsim:Parameter">
                 <bpsim:FloatingParameter value="100.0"/>
               </bpsim:Probability>
             </bpsim:ControlParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E" id="_H0j6jvC2EeeVjoJoh36brg">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_3C5FDB01-6B7D-4A1A-AEB0-8891EA97BC0E" id="_aOSD0_C2EeeVjoJoh36brg">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:UniformDistribution max="10.0" min="5.0"/>
@@ -177,7 +175,7 @@ System.out.println("Monto vrs PTC" + " " + puntos.getPuntosPropuestos());
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_H0jTcPC2EeeVjoJoh36brg</bpmn2:source>
-    <bpmn2:target>_H0jTcPC2EeeVjoJoh36brg</bpmn2:target>
+    <bpmn2:source>_aOQ1sPC2EeeVjoJoh36brg</bpmn2:source>
+    <bpmn2:target>_aOQ1sPC2EeeVjoJoh36brg</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
