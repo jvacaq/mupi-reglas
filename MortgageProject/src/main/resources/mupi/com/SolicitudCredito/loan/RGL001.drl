@@ -6,14 +6,29 @@ rule "RGl001-1" //VALLIDAR PORCENTAJE PATRIMONIO TECNICO
             
              when
            
-            $p : Solicitud((codigoProducto == 36001 || (tipoGarantia == "SIN GARANTIA" && tipoPersona == "JURIDICA")))
+            $p : PorcentajePTC(monto > (ptc * 0.06))
             
              then
              
             modify($p){
-              setRequiereGarantias("NO"),
-              setRequiereGarantes("NO")
+              setSuperaPorcentaje("SI")
             }
-            System.out.println("requiere gatantias" + " " + $p.getRequiereGarantias() + " " + "requiere garantes" + " " + $p.getRequiereGarantes());
+            System.out.println("supera porcentaje" + " " + $p.getSuperaPorcentaje());
+end
+
+rule "RGl001-1" //VALLIDAR PORCENTAJE PATRIMONIO TECNICO
+            lock-on-active true
+            ruleflow-group "RGL1"
+            
+             when
+           
+            $p : PorcentajePTC(monto <= (ptc * 0.06))
+            
+             then
+             
+            modify($p){
+              setSuperaPorcentaje("NO")
+            }
+            System.out.println("supera porcentaje" + " " + $p.getSuperaPorcentaje());
 end
 
