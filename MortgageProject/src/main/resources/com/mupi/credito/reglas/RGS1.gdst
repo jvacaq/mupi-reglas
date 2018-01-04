@@ -29,7 +29,7 @@
           <factField>ratificada</factField>
           <fieldType>Integer</fieldType>
           <operator>==</operator>
-          <valueList>0,1</valueList>
+          <valueList> ,0,1</valueList>
           <parameters/>
         </condition-column52>
         <condition-column52>
@@ -119,7 +119,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -147,7 +147,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
