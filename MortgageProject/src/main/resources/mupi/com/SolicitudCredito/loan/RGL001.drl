@@ -29,6 +29,6 @@ rule "RGl001-2" //VALLIDAR PORCENTAJE PATRIMONIO TECNICO
             modify($p){
               setSuperaPorcentaje("NO")
             }
-            System.out.println("supera porcentaje" + " " + $p.getSuperaPorcentaje());
+            System.out.println("supera porcentaje TEST1" + " " + $p.getSuperaPorcentaje());
 end
 
