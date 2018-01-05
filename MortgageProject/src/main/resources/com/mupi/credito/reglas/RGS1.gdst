@@ -1,5 +1,6 @@
 <decision-table52>
   <tableName>RGS1</tableName>
+  <parentName></parentName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
     <width>-1</width>
@@ -46,22 +47,6 @@
           <fieldType>String</fieldType>
           <operator>==</operator>
           <valueList>SI</valueList>
-          <parameters/>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>ratificadaExt1</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>ratificadaExt</factField>
-          <fieldType>String</fieldType>
-          <operator>!=</operator>
-          <valueList> , SI</valueList>
           <parameters/>
         </condition-column52>
       </conditions>
@@ -145,11 +130,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -178,11 +158,6 @@
         <isOtherwise>true</isOtherwise>
       </value>
       <value>
-        <valueString>SI</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -199,11 +174,6 @@
         <valueString>else</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>true</isOtherwise>
       </value>
       <value>
         <valueString></valueString>
